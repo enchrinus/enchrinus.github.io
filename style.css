@@ -7,7 +7,7 @@ body {
     background: #bbb;
     color: #fff;
     font-family: 'Arial', sans-serif;
-	background-image: url('background.png');
+	background-image: url('bg.jpg');
 	background-size: cover;
 }
 
@@ -64,3 +64,4 @@ body {
         transform: translateY(-10px);
     }
 }
+
