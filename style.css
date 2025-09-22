@@ -67,6 +67,7 @@ body {
 
 
 .video-container {
+  position: relative;
   width: 90%;
   aspect-ratio: 16 / 9;
 }
