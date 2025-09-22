@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="favicon.ico" rel="icon" type="image/x-icon">
+	<title>wee</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+
+
+<div id="teksti" class="wave-text">
+Certain hungry knight has stumbled on the bar.
+He notices a pie looking object.
+How many sectors are in that pie?
+Divide it by 3 to get your answer
+</div>
+
+<div>
+	mmmm
+</div>
+
+<div>
+	<img src="https://www.gif-vif.com/trending/kingdom-come-deliverance-kcd-2.gif" alt="Knigth" width="300" height="300" />
+</div>
+
+
+<script>
+window.onload = (event) => {
+	let textdiv = document.getElementById("teksti");
+	let oldtext = textdiv.innerHTML;
+	let newtext = "";
+	for (let char of oldtext) 
+	{
+		if (char!=' ' && char!='\n') {
+			newtext = newtext.concat("<span>"+char+"</span>");
+		} else if (char=='\n'){
+			newtext = newtext.concat("<br>");
+		} else {
+			newtext = newtext.concat("&emsp;");
+		}
+	}
+	
+	textdiv.innerHTML = newtext;
+	//console.log(newtext)
+}
+</script>
+
+</body>
+</html>
