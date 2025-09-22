@@ -7,9 +7,9 @@
     <title>I feel quite hungry</title>
 </head>
 <body>
-    <h2>Displaying a GeekforGeeks GIF using the
+    <h2>XXX
         <code>&lt;img&gt;</code> tag:
     </h2>
-    <img src="https://www.gif-vif.com/trending/kingdom-come-deliverance-kcd-2.gif" alt="Knigth" width="400" height="300" />
+    <img src="https://www.gif-vif.com/trending/kingdom-come-deliverance-kcd-2.gif" alt="Knigth" width="300" height="300" />
 </body>
 </html>
