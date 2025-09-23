@@ -6,6 +6,7 @@ body {
 	background-color:#ddd;
 	background-image: url('bg.jpg');
 	background-size: cover;
+    background-repeat: repeat;
 }
 
 .wave-text span {
