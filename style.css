@@ -10,7 +10,7 @@ body {
 
 .wave-text span {
     display: inline-block;
-    font-size: 5rem;
+    font-size: 2rem;
     animation: wave 2s ease-in-out infinite;
 	
 }
@@ -20,8 +20,8 @@ body {
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
-	margin-left:20%;
-	margin-right:20%;
+	margin-left:10%;
+	margin-right:10%;
 }
 
 .wave-text {
@@ -32,7 +32,7 @@ body {
 	color: #fff;
 	min-width: 30%;
 	text-align: center;
-	margin-top: 16rem;
+	margin-top: 10rem;
 }
 
 .wave-text span:nth-child(10n) {
@@ -71,7 +71,7 @@ body {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
 }
 
