@@ -2,7 +2,7 @@
 <html>
 <head>
 	<link href="favicon.ico" rel="icon" type="image/x-icon">
-	<title>wee</title>
+	<title>watch out</title>
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
@@ -10,41 +10,10 @@
 
 
 <div class="kontti">
-	<div id="teksti" class="wave-text">
-jekku
-	</div>
-
-	<div>
-		<br>
-	</div>
-
-	<div>
-		<br>
-	</div>
-	
+<div class="kuvakontti">
+    <img src="pictures/2spooky.gif">
 </div>
-
-
-<script>
-window.onload = (event) => {
-	let textdiv = document.getElementById("teksti");
-	let oldtext = textdiv.innerHTML;
-	let newtext = "";
-	for (let char of oldtext) 
-	{
-		if (char!=' ' && char!='\n') {
-			newtext = newtext.concat("<span>"+char+"</span>");
-		} else if (char=='\n'){
-			newtext = newtext.concat("<br>");
-		} else {
-			newtext = newtext.concat("&emsp;");
-		}
-	}
-	
-	textdiv.innerHTML = newtext;
-	//console.log(newtext)
-}
-</script>
+</div>
 
 </body>
 </html>
