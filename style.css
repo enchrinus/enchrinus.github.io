@@ -11,7 +11,7 @@ body {
 
 .wave-text span {
     display: inline-block;
-    font-size: 3rem;
+    font-size: 2rem;
     animation: wave 2s ease-in-out infinite;
 	
 }
