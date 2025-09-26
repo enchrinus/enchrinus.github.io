@@ -96,6 +96,12 @@ body {
 }
 
 
+.skelkontti {
+    position: fixed;
+  bottom: 0;
+  left: 10px;
+  z-index: 0;
+}
 
 
 
