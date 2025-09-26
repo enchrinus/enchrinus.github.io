@@ -150,3 +150,10 @@ background-color: #C0C0C0;
   animation: scroll 100s linear infinite;
   z-index: 1;
   }
+
+  .header-image {
+  max-height: 300px;
+  padding: 0px;
+  position: relative;
+  z-index: 2;
+}
