@@ -110,4 +110,11 @@ body {
   z-index: 0;
 }
 
-
+.taustat {
+width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  background-image: linear-gradient(#d08fff, #1319d1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+}
