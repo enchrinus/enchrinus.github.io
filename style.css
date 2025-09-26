@@ -157,3 +157,14 @@ background-color: #C0C0C0;
   position: relative;
   z-index: 2;
 }
+
+.main-content {
+  display: flex;
+  margin: 20px;
+    margin-left: 20px;
+  margin-left: 150px;
+  min-height: 600px;
+  background-color: #E0E0E0;
+  border: 2px solid #808080;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
