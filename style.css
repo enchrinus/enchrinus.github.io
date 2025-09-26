@@ -38,7 +38,10 @@ body {
   z-index: 1;
   }
 
-
+  @keyframes scroll {
+    0% { background-position: 0 0; }
+    100% { background-position: 1000% 0; }
+}
 .wave-text {
 	background-color:rgba(0, 0, 0, 0.7);
 	border-radius: 2rem;
