@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="favicon.ico" rel="icon" type="image/x-icon">
+	<title>pizzle yanked</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+
+<div class="skelkontti">
+	<img src="pictures/halloween-happy.gif">
+</div>
+
+<div class="ghostkontti">
+	<img width="150px" src="pictures/cute-ghost.gif">
+</div>
+
+
+
+<div class="taustat">
+	<div class ="header">
+		<div class="scrolling-background">
+		<img class="header-image" src="pictures/Halloween_Witch_Costume.jpg">
+		</div>
+	</div> 
+	<div class="main-convent">
+		<div class="kontti">
+			<div id="teksti" class="wave-text">
+Wery cool skeleton
+			</div>
+
+	<div>
+		<br>
+	</div>
+
+	<div>
+		<img width="500px" src="pictures/skeleton-dance-skeleton.gif" alt="skel">
+	</div>
+	<center>
+	<p><img src="pictures/ghost-spooky.gif">
+	</p>
+		                	 ,--.
+                          {    }
+                          K,   }
+                         /  `Y`
+                    _   /   /
+                   {_'-K.__/
+                     `/-.__L._
+                     /  ' /`\_}
+                    /  ' /     
+            ____   /  ' /
+     ,-'~~~~    ~~/  ' /_
+   ,'             ``~~~%%',
+  (                     %  Y
+ {                      %% I
+{      -                 %  `.
+|       ',                %  )
+|        |   ,..__      __. Y
+|    .,_./  Y ' / ^Y   J   )|
+\           |' /   |   |   ||
+ \          L_/    . _ (_,.'(
+  \,   ,      ^^""' / |      )
+    \_  \          /,L]     /
+      '-_`-,       ` `   ./`
+         `-(_            )
+             ^^\..___,.--`
+	</center>
+</div>
+</div>
+</div>
+<script>
+window.onload = (event) => {
+	let textdiv = document.getElementById("teksti");
+	let oldtext = textdiv.innerHTML;
+	let newtext = "";
+	for (let char of oldtext) 
+	{
+		if (char!=' ' && char!='\n') {
+			newtext = newtext.concat("<span>"+char+"</span>");
+		} else if (char=='\n'){
+			newtext = newtext.concat("<br>");
+		} else {
+			newtext = newtext.concat("&emsp;");
+		}
+	}
+	
+	textdiv.innerHTML = newtext;
+	//console.log(newtext)
+}
+</script>
+
+</body>
+</html>
