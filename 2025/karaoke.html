@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="favicon.ico" rel="icon" type="image/x-icon">
+	<title>Karaoke biisilista</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 90vh;
+	background-image: url('pictures/bg.jpg');
+	background-size: cover;
+  background-repeat: repeat;
+}
+
+#myInput {
+  background-image: url('pictures/haku.png');
+  background-position: 8px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li{
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+</style>	
+</head>
+
+<body>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Hae..." title="Type in a name">
+<div id="" style="overflow:auto; height: 80vh;" >
+<ul id="myUL">
+<li>3 Doors Down - Kryptonite</li>
+<li>3 Doors Down - When I'm Gone</li>
+<li>30 Seconds to mars - Kings and queens</li>
+<li>30 Seconds to Mars - The kill</li>
+<li>4 Non Blondes - What's Up</li>
+<li>a-ha - Take on me</li>
+<li>a-ha - Take On Me (MTV Unplugged)</li>
+<li>ABBA - Dancing Queen</li>
+<li>ABBA - Does Your Mother Know</li>
+<li>ABBA - Fernando</li>
+<li>ABBA - Gimme! Gimme! Gimme! (A Man After Midnight)</li>
+<li>ABBA - Honey Honey</li>
+<li>ABBA - Knowing Me Knowing You</li>
+<li>ABBA - Mamma Mia</li>
+<li>ABBA - Money Money Money</li>
+<li>ABBA - Super Trouper</li>
+<li>ABBA - Take A Chance On Me</li>
+<li>ABBA - The Winner Takes It All</li>
+<li>ABBA - Waterloo</li>
+<li>Abingdon boys school - HOWLING</li>
+<li>ACDC - Highway To Hell</li>
+<li>ACDC - Thunderstruck</li>
+<li>Ace of Base - The Sign</li>
+<li>Adam Lambert - If I Had You</li>
+<li>Adele - Easy on me</li>
+<li>Adele - Hello</li>
+<li>Adele - Million Years Ago</li>
+<li>Adele - Oh my God</li>
+<li>Adele - Rolling In The Deep</li>
+<li>Adele - Send My Love (To Your New Lover)</li>
+<li>Adele - Skyfall</li>
+<li>Adele - Someone Like You</li>
+<li>Adele - Turning Tables</li>
+<li>Aerosmith - Crazy</li>
+<li>Aerosmith - I don't want to miss a thing</li>
+<li>Afromania - Minna no Peace (TV)</li>
+<li>Against The Current - Legends Never Die</li>
+<li>Agnete Kjølsrud - Get Jinxed</li>
+<li>Aikakone - Keltainen</li>
+<li>Aikakone - Neiti Groove</li>
+<li>Aikakone - Odota</li>
+<li>Aki Sirkesalo - Naispaholainen</li>
+<li>Aladdin - A Whole New World</li>
+<li>Alan Walker - Alone</li>
+<li>Alan Walker - Faded</li>
+<li>Alanis Morissette - Ironic</li>
+<li>Alessia Cara - How Far I'll Go (De Moana)</li>
+<li>Alexander Rybak - Fairytale</li>
+<li>Alfredo Casero - Shima Uta</li>
+<li>Alice Cooper - Poison</li>
+<li>Alicia Keys - Fallin'</li>
+<li>Alicia Keys - Girl On Fire</li>
+<li>Alien Ant Farm - Smooth Criminal</li>
+<li>Alstroemeria Records - Bad Apple!</li>
+<li>Amy Winehouse - Back To Black</li>
+<li>Amy Winehouse - Rehab</li>
+<li>Anastacia - I'm Outta Love</li>
+<li>Anders Nilsen - Salsa Tequila</li>
+<li>Andrew Gold - Spooky Scary Skeletons</li>
+<li>Anna Eriksson - Huojuva Talo</li>
+<li>Anna Eriksson - Kaikista kasvoista</li>
+<li>Annika Eklund - Shanghain valot</li>
+<li>Anssi Kela - Milla</li>
+<li>Apulanta - Pahempi toistaan</li>
+<li>Apulanta - Viisaus ei asu meissä</li>
+<li>Aqua - Barbie Girl</li>
+<li>Aqua - Cartoon heroes</li>
+<li>Aqua - Lollipop (Candyman)</li>
+<li>Aqua Timez - Sen No Yoru Wo Koete</li>
+<li>Arctic Monkeys - Do I Wanna Know</li>
+<li>Arctic Monkeys - I Bet You Look Good on the Dancefloor (album version)</li>
+<li>Aretha Franklin - Respect</li>
+<li>Aretha Franklin & George Michael - I Knew You Were Waiting (For Me)</li>
+<li>Ari Koivunen - Hear My Call</li>
+<li>Ariana Grande - 7 Rings</li>
+<li>Ariana Grande - God is a woman</li>
+<li>Ariana Grande - yes, and</li>
+<li>Asian Kung-Fu Generation - Atarashii Sekai</li>
+<li>Asian Kung-fu Generation - Haruka kanata</li>
+<li>Asian Kung-Fu Generation - ReRe (TV)</li>
+<li>Asian Kung-fu Generation - Rewrite</li>
+<li>Auli'i Cravalho - How Far I'll Go</li>
+<li>Ava Max - Christmas Without You</li>
+<li>Ava Max - Kings & Queens</li>
+<li>Ava Max - Maybe you're the problem</li>
+<li>Ava Max - Million Dollar Baby</li>
+<li>Ava Max - My Head & My Heart</li>
+<li>Ava Max - So am I</li>
+<li>Ava Max - Sweet but Psycho</li>
+<li>Avicii - Addicted To You</li>
+<li>Avicii - Hey brother</li>
+<li>Avicii - The nights</li>
+<li>Avicii - Waiting For Love</li>
+<li>Avicii - Wake Me Up!</li>
+<li>Avicii ft. Robbie Williams - The days</li>
+<li>Avril Lavigne - Complicated</li>
+<li>Avril Lavigne - Girlfriend</li>
+<li>Avril Lavigne - My Happy Ending</li>
+<li>Avril Lavigne - Sk8er Boi</li>
+<li>Avril Lavigne - What The Hell</li>
+<li>Aya Hirano - God Knows</li>
+<li>Aya Hirano - Motteke! Sailor Fuku (TV)</li>
+<li>Aya Hirano, Minori Chihara & Yuko Goto - Hare hare yukai (TV)</li>
+<li>Ayumi Miyazaki - Brave Heart</li>
+<li>B-52's - Love Shack</li>
+<li>Backstreet Boys - Everybody (Backstreet's Back)</li>
+<li>Backstreet Boys - Get down</li>
+<li>Backstreet Boys - I Want It That Way</li>
+<li>Barenaked Ladies - One Week</li>
+<li>Barry White - You're The First, The Last, My Everything</li>
+<li>Basshunter - Now You Are Gone</li>
+<li>Beach Boys - Wouldn't It Be Nice</li>
+<li>Beauty And The Beast - Beauty And The Beast</li>
+<li>Bee Gees - Stayin' Alive</li>
+<li>Ben E. King - Stand by me</li>
+<li>Beyoncé - Halo</li>
+<li>Beyoncé - Single ladies (Put a ring on it)</li>
+<li>Big Mountain - Baby, I Love Your Way</li>
+<li>Bill Withers - Ain't No Sunshine (Old Grey Whistle Test live version)</li>
+<li>Billie Eilish - All the good girls go to Hell</li>
+<li>Billie Eilish - Bad Guy</li>
+<li>Billie Eilish - Bury a friend</li>
+<li>Billie Eilish - i love you</li>
+<li>Billie Eilish, Khalid - lovely</li>
+<li>Billy Idol - Dancing with myself</li>
+<li>Billy Idol - Rebel Yell</li>
+<li>Billy Joel - We didn't start the fire</li>
+<li>Black Eyed Peas - I Gotta Feeling</li>
+<li>Black Eyed Peas, Shakira and David Guetta - Don't you worry</li>
+<li>Black Sabbath - Iron Man</li>
+<li>Black Sabbath - Paranoid</li>
+<li>BLACKPINK - As if it's your last</li>
+<li>BLACKPINK - BOOMBAYAH</li>
+<li>BLACKPINK - DDU-DU DDU-DU</li>
+<li>BLACKPINK - How You Like That</li>
+<li>BLACKPINK - Kill this love</li>
+<li>BLACKPINK - Lovesick Girls</li>
+<li>BLACKPINK - Pink Venom</li>
+<li>BLACKPINK - Playing with fire</li>
+<li>BLACKPINK - WHISTLE</li>
+<li>BLACKPINK & Selena Gomez - Ice Cream</li>
+<li>Blackway & Black Caviar - What's Up Danger</li>
+<li>Blink 182 - All the small things</li>
+<li>Blink 182 - What's My Age Again</li>
+<li>Blondie - One way or another</li>
+<li>Blu Cantrell - Hit 'Em Up Style</li>
+<li>Blue Swede - Hooked on a feeling</li>
+<li>Blue Öyster Cult - (Don't Fear) The Reaper</li>
+<li>Bob Marley - No Woman No Cry</li>
+<li>Bob Marley & the Wailers - I Shot The Sheriff</li>
+<li>Bon Jovi - Blaze Of Glory</li>
+<li>Bon Jovi - Have a nice day</li>
+<li>Bon Jovi - It's my life</li>
+<li>Bon Jovi - Livin' on a Prayer</li>
+<li>Bon Jovi - You Give Love A Bad Name</li>
+<li>Boney M - Daddy Cool</li>
+<li>Boney M. - Rasputin</li>
+<li>Boney M. - Rivers of Babylon</li>
+<li>Boney M. - Sunny</li>
+<li>Bonnie Tyler - Holding Out For A Hero</li>
+<li>Bonnie Tyler - Total Eclipse of the Heart</li>
+<li>Boston - More Than A Feeling</li>
+<li>Bowling For Soup - 1985</li>
+<li>Boys Like Girls - The Great Escape</li>
+<li>Breaking Benjamin - I Will Not Bow</li>
+<li>Breaking Benjamin - So Cold</li>
+<li>Britney Spears - (You Drive Me) Crazy</li>
+<li>Britney Spears - Baby One More Time</li>
+<li>Britney Spears - Circus</li>
+<li>Britney Spears - Everytime</li>
+<li>Britney Spears - From The Bottom Of My Broken Heart</li>
+<li>Britney Spears - Gimme More</li>
+<li>Britney Spears - I Love Rock n' Roll</li>
+<li>Britney Spears - If U Seek Amy</li>
+<li>Britney Spears - Lucky</li>
+<li>Britney Spears - Oops! I did it again</li>
+<li>Britney Spears - Stronger</li>
+<li>Britney Spears - Till The World Ends</li>
+<li>Britney Spears - Toxic</li>
+<li>Britney Spears - Womanizer</li>
+<li>Britney Spears - Work Bitch</li>
+<li>Britney Spears feat. Backstreet Boys - Matches</li>
+<li>Bruce Springsteen - Born in the U.S.A</li>
+<li>Bruce Springsteen - Dancing in the dark</li>
+<li>Bruce Springsteen - Glory Days</li>
+<li>Bruno Mars - Grenade</li>
+<li>Bruno Mars - Just the Way You Are</li>
+<li>Bruno Mars - Locked Out Of Heaven</li>
+<li>Bruno Mars - Talking To The Moon</li>
+<li>Bruno Mars - The Lazy Song</li>
+<li>Bruno Mars - Treasure</li>
+<li>Bryan Adams - Summer of '69</li>
+<li>BTS - Butter</li>
+<li>BTS - Dynamite</li>
+<li>Buggles - Video Killed The Radio Star</li>
+<li>BUMP OF CHICKEN - Hello, world! (TV)</li>
+<li>Busted - Crashed the Wedding</li>
+<li>Busted - Year 3000</li>
+<li>Calvin Harris - Summer</li>
+<li>Calvin Harris & Dua Lipa - One kiss</li>
+<li>Calvin Harris and Ellie Goulding - Miracle</li>
+<li>Calvin Harris feat. Rihanna - This Is What You Came For</li>
+<li>Calvin Harris feat. Tinie Tempah - Drinking From The Bottle</li>
+<li>Cameo - Word Up</li>
+<li>Camila Cabello feat. Young Thug - Havana</li>
+<li>Camila Cabello ft. Ed Sheeran - Bam Bam</li>
+<li>Camp Rock - This Is Me</li>
+<li>Carl Douglas - Kung Fu Fighting</li>
+<li>Carly Rae Jepsen - Call Me Maybe</li>
+<li>Carly Rae Jepsen - I Really Like You</li>
+<li>Carly Simon - Let the river run</li>
+<li>Carly Simon - You're so vain</li>
+<li>Cartoons - Witch Doctor</li>
+<li>Cascada - A Neverending Dream</li>
+<li>Cascada - Bad Boy</li>
+<li>Cascada - Evacuate The Dancefloor</li>
+<li>Cascada - Everytime We Touch</li>
+<li>Cascada - Last Christmas</li>
+<li>Cascada - Miracle</li>
+<li>Cascada - What Hurts The Most</li>
+<li>Céline Dion - All by myself</li>
+<li>Céline Dion - Because you loved me</li>
+<li>Céline Dion - My Heart Will Go On</li>
+<li>Chaba - Parade</li>
+<li>Charlie Puth & Selena Gomez - We don't talk anymore</li>
+<li>Cheap Trick - I Want You To Want Me</li>
+<li>Cheek - Liekeissä</li>
+<li>CHEMISTRY - Period</li>
+<li>Cher - Believe</li>
+<li>Cher - If I Could Turn Back Time</li>
+<li>Chieko Kawabe - Sakura kiss</li>
+<li>Chris De Burgh - The lady in red</li>
+<li>Chris Isaak - Wicked game</li>
+<li>Christina Aguilera - Beautiful</li>
+<li>Christina Aguilera - What A Girl Wants</li>
+<li>Christina Aguilera feat. Redman - Dirrty</li>
+<li>Christina Aguilera, Lil' Kim, Mýa, P!nk - Lady Marmalade</li>
+<li>Chuck Berry - Johnny B. Goode</li>
+<li>Chumbawamba - Tubthumping</li>
+<li>Cinderella - Bibbidi Bobbidi Boo</li>
+<li>CMX - Ruoste</li>
+<li>Coheed and Cambria - Welcome Home</li>
+<li>Coldplay - A sky full of stars</li>
+<li>Coldplay - Adventure Of A Lifetime</li>
+<li>Coldplay - Clocks</li>
+<li>Coldplay - Every teardrop is a waterfall</li>
+<li>Coldplay - Fix You</li>
+<li>Coldplay - The Scientist</li>
+<li>Coldplay - Viva la vida</li>
+<li>Coldplay - Yellow</li>
+<li>Coldplay X BTS - My Universe</li>
+<li>Conchita Wurst - Rise Like A Phoenix</li>
+<li>Cool Joke - Undo</li>
+<li>Counting Crows - Accidentally in love</li>
+<li>Craig David - Walking Away</li>
+<li>Crash Test Dummies - Mmm Mmm Mmm Mmm</li>
+<li>Creedence Clearwater Revival - Bad Moon Rising</li>
+<li>Creedence Clearwater Revival - Have You Ever Seen The Rain</li>
+<li>Creedence Clearwater Revival - I put a spell on you</li>
+<li>Creepy Nuts - Bling-Bang-Bang-Born (TV)</li>
+<li>Culture Club - Karma Chameleon</li>
+<li>Cutting Crew - Died In Your Arms</li>
+<li>Cyndi Lauper - Girls Just Wanna Have Fun</li>
+<li>Cyndi Lauper - Time After Time</li>
+<li>Cynthia Harrell - Snake Eater</li>
+<li>D-51 - Brand new world (TV)</li>
+<li>Daft Punk - Get Lucky</li>
+<li>Daft Punk - One More Time</li>
+<li>Daisuke Hasegawa - Uragirimono no Requiem (TV)</li>
+<li>Daniel Bedingfield - If You're Not the One</li>
+<li>Daniel Powter - Bad Day</li>
+<li>Dave Rodgers - Deja Vu</li>
+<li>David Bowie - Changes</li>
+<li>David Bowie - Heroes</li>
+<li>David Bowie - Modern Love</li>
+<li>David Bowie - Rebel Rebel</li>
+<li>David Bowie - Space Oddity</li>
+<li>David Bowie - Starman</li>
+<li>David Guetta & Sia - Flames</li>
+<li>David Guetta & Sia - She Wolf (Falling To Pieces)</li>
+<li>David Guetta & Sia - Titanium</li>
+<li>David Guetta feat. Akon - Sexy Bitch</li>
+<li>David Guetta feat. Flo Rida & Nicki Minaj - Where Them Girls At</li>
+<li>David Guetta feat. Kid Cudi - Memories</li>
+<li>David Guetta feat. Sam Martin - Lovers On The Sun</li>
+<li>Dead or Alive - You Spin Me Round (Like A Record</li>
+<li>Dean Fujioka - History Maker (TV)</li>
+<li>Deee-lite - Groove is in the Heart</li>
+<li>Deep Purple - Highway Star</li>
+<li>Deep Purple - Smoke On The Water</li>
+<li>Demi Lovato - Cool For The Summer</li>
+<li>Demi Lovato - Let It Go</li>
+<li>Depeche Mode - Enjoy The Silence</li>
+<li>Depeche Mode - Everything counts</li>
+<li>Depeche Mode - Just can't get enough</li>
+<li>Destiny's Child - Survivor</li>
+<li>Diana Ross - I'm Coming Out</li>
+<li>Dido - Thank You</li>
+<li>Dido - White Flag</li>
+<li>Dio - Rainbow in the Dark</li>
+<li>Dire Straits - Sultans of Swing</li>
+<li>Dire Straits - Tunnel of love</li>
+<li>Disturbed - The Sound Of Silence</li>
+<li>DNCE - Cake by the ocean</li>
+<li>Doja Cat - Say So</li>
+<li>Doja Cat feat. SZA - Kiss Me More</li>
+<li>Dolly Parton - 9 To 5</li>
+<li>Dolly Parton - Jolene</li>
+<li>Don Huonot - Hyvää yötä ja huomenta</li>
+<li>Don Huonot - Riidankylväjä</li>
+<li>Donna Summer - Hot Stuff</li>
+<li>Dover - Devil came to me</li>
+<li>Dover - Let Me Out</li>
+<li>Dover - Serenade</li>
+<li>DragonForce - Through the fire and flames</li>
+<li>Dua Lipa - Break My Heart</li>
+<li>Dua Lipa - Dance The Night</li>
+<li>Dua Lipa - Hallucinate</li>
+<li>Dua Lipa - IDGAF</li>
+<li>Dua Lipa - Last Dance</li>
+<li>Dua Lipa - Levitating</li>
+<li>Dua Lipa - Physical</li>
+<li>Dua Lipa & BLACKPINK - Kiss and Make Up</li>
+<li>Dua Lipa and Angèle - Fever</li>
+<li>Duran Duran - Hungry Like The Wolf</li>
+<li>Duran Duran - Ordinary World</li>
+<li>Duran Duran - Rio</li>
+<li>Earth, Wind & Fire - September</li>
+<li>Ed Sheeran - Bad habits</li>
+<li>Ed Sheeran - Galway Girl</li>
+<li>Ed Sheeran - Perfect</li>
+<li>Ed Sheeran - Shape of you</li>
+<li>Ed Sheeran - Shivers</li>
+<li>Ed Sheeran & Pokémon - Celestial</li>
+<li>Ed Sheeran and Andrea Bocelli - Perfect symphony</li>
+<li>Ed Sheeran and Elton John - Merry Christmas</li>
+<li>Egotrippi - Matkustaja</li>
+<li>Eiffel 65 - Blue</li>
+<li>Eiko Shimamiya - Higurashi No Naku Koro Ni (TV)</li>
+<li>Eiko Shimamiya - Naraku no hana (TV)</li>
+<li>Elastinen - Anna soida</li>
+<li>Electric Light Orchestra - Mr. Blue Sky</li>
+<li>Electric Six - Gay Bar</li>
+<li>Ellen McLain - Want You Gone</li>
+<li>Ellie Goulding - Burn</li>
+<li>Ellie Goulding - Love Me Like You Do</li>
+<li>Elton John - Can you feel the love tonight</li>
+<li>Elton John - I'm Still Standing</li>
+<li>Elton John - Rocket Man</li>
+<li>Elton John & George Michael - Don't let the sun go down on me</li>
+<li>Elton John & Kiki Dee - Don't Go Breaking My Heart</li>
+<li>Elton John and Dua Lipa - Cold Heart</li>
+<li>Elvis Presley - Blue Christmas</li>
+<li>Elvis Presley - Can't help falling in love</li>
+<li>Elvis Presley - Hound Dog</li>
+<li>Elvis Presley - Love Me Tender</li>
+<li>Elvis Presley - Viva Las Vegas</li>
+<li>Eminem - Not afraid</li>
+<li>Eminem & Rihanna - The Monster</li>
+<li>Eminem feat Rihanna - Love The Way You Lie</li>
+<li>Eminem ft. Nate Dogg - Shake That</li>
+<li>Enrique Iglesias - Bailamos</li>
+<li>Enrique Iglesias feat. Ludacris & DJ Frank E - Tonight (I'm Fuckin' You)</li>
+<li>Enrique Iglesias feat. Ludacris & DJ Frank E - Tonight (I'm Lovin' You)</li>
+<li>Eppu Normaali - Joka päivä ja joka ikinen yö</li>
+<li>Eppu Normaali - Tahroja paperilla</li>
+<li>Eppu Normaali - Vuonna '85</li>
+<li>Erasure - A Little Respect</li>
+<li>Erasure - Always</li>
+<li>Eric Clapton - Tears in Heaven</li>
+<li>Erika Vikman - ICH KOMME</li>
+<li>Eruption - One Way Ticket</li>
+<li>Europe - Carrie</li>
+<li>Europe - Final Countdown</li>
+<li>Eurythmics - Here comes the rain again</li>
+<li>Eurythmics - Sweet Dreams</li>
+<li>Eurythmics - When tomorrow comes</li>
+<li>Evanescence - Bring Me to Life</li>
+<li>Evanescence - Everybody's fool</li>
+<li>Evanescence - Going under</li>
+<li>Evanescence - Hello</li>
+<li>Evanescence - Lithium</li>
+<li>Evanescence - My Inmortal</li>
+<li>Extreme - More Than Words</li>
+<li>Fairground Attraction - Perfect</li>
+<li>Fall Out Boy - Centuries</li>
+<li>Fall Out Boy - Dance Dance</li>
+<li>Fall Out Boy - Immortals</li>
+<li>Fall Out Boy - Sugar, We're Goin' Down</li>
+<li>Fall Out Boy - This Ain't A Scene</li>
+<li>Fall Out Boy - Thnks Fr Th Mmrs</li>
+<li>Faylan - Blood Teller (TV)</li>
+<li>Fergie - Big Girls Don't Cry</li>
+<li>Fine Young Cannibals - She drives me crazy</li>
+<li>Finger Eleven - Paralyzer</li>
+<li>Fintelligens - Hoida homma</li>
+<li>Five - Everybody Get Up</li>
+<li>Fleetwood Mac - Dreams</li>
+<li>Fleetwood Mac - Go Your Own Way</li>
+<li>Fleetwood Mac - Little Lies</li>
+<li>Flo Rida - Right round</li>
+<li>FLOW - CHA-LA HEAD-CHA-LA</li>
+<li>Flow - Colors (TV)</li>
+<li>FLOW - GO!!!</li>
+<li>FLOW - GO!!! (TV)</li>
+<li>Flow - Sign</li>
+<li>flumpool - Hana ni Nare</li>
+<li>flumpool - Yoru wa Nemureru kai</li>
+<li>Foo Fighters - Best Of You</li>
+<li>Foo Fighters - My hero</li>
+<li>Foo Fighters - The Pretender</li>
+<li>Fool's Garden - Lemon Tree</li>
+<li>Foreigner - I Want To Know What Love Is</li>
+<li>Foster The People - Pumped Up Kicks</li>
+<li>Fountains Of Wayne - Stacy's Mom</li>
+<li>Frank Sinatra - Fly Me to the Moon</li>
+<li>Frank Sinatra - My Way</li>
+<li>Frankie Goes to Hollywood - Relax</li>
+<li>Franz Ferdinand - Take Me Out</li>
+<li>Freddie Mercury - I was born to love you</li>
+<li>Frederic - Kanashii Ureshii</li>
+<li>Frederic - Kanashii Ureshii (TV)</li>
+<li>Frederic - oddloop</li>
+<li>Frozen - Let It Go (25 languages)</li>
+<li>Fun & Janelle Monáe - We Are Young</li>
+<li>Garbage - Only Happy When It Rains</li>
+<li>Garbage - The world is not enough</li>
+<li>Gayle - Abcdefu</li>
+<li>Genesis - I Can't Dance</li>
+<li>Genesis - Invisible Touch</li>
+<li>George Ezra - Shotgun</li>
+<li>George Michael - Careless Whisper</li>
+<li>George Michael - December song (I dreamed of Christmas)</li>
+<li>George Michael - Faith</li>
+<li>George Michael - Father figure</li>
+<li>George Michael - I Want Your Sex</li>
+<li>George Michael - Jesus to a child</li>
+<li>George Michael - One more try</li>
+<li>George Michael & Queen - Somebody to Love</li>
+<li>Ghost - Cirice</li>
+<li>Ghost - He is</li>
+<li>Ghost - Satanized</li>
+<li>Gibson Brothers - Cuba</li>
+<li>Gibson Brothers - Que sera mi vida</li>
+<li>Gigi D'agostino - L'amour Toujours</li>
+<li>Gimmel - Etsit muijaa seuraavaa</li>
+<li>Girls Aloud - love Machine</li>
+<li>Glee - Call Me Maybe</li>
+<li>Glee - I Kissed a Girl</li>
+<li>Glee - Let It Go</li>
+<li>Glee - Smooth Criminal</li>
+<li>Glee - Somebody That I Used To Know</li>
+<li>Glee - Umbrella, Singin' In The Rain</li>
+<li>Glee - What Doesn't Kill You (Stronger)</li>
+<li>Gloria Gaynor - I am what I am</li>
+<li>Gloria Gaynor - I Will Survive</li>
+<li>Gomu - Omoide wa Okkusenman!</li>
+<li>Goo Goo Dolls - Iris</li>
+<li>Good Charlotte - Girls And Boys</li>
+<li>Good Charlotte - I Just Wanna Live</li>
+<li>Gorillaz - Clint Eastwood</li>
+<li>Gorillaz - Feel Good Inc</li>
+<li>Gotye & Kimbra - Somebody That I Used To Know</li>
+<li>Grease (John Travolta & Olivia Newton-John) - Summer Nights</li>
+<li>Grease (John Travolta & Olivia Newton-John) - You're the One that I Want</li>
+<li>Green Day - 21 guns</li>
+<li>Green Day - American Idiot</li>
+<li>Green Day - Basket Case</li>
+<li>Green Day - Boulevard of Broken Dreams</li>
+<li>Green Day - Holiday</li>
+<li>Green Day - Wake Me Up When September Ends</li>
+<li>Guns N' Roses - Knocking On Heavens Door</li>
+<li>Guns N' Roses - Live And Let Die</li>
+<li>Guns N' Roses - Paradise City</li>
+<li>Guns N' Roses - Sweet Child O´Mine</li>
+<li>Guns N' Roses - Welcome to the jungle</li>
+<li>Gwen Stefani - Hollaback Girl</li>
+<li>Gwen Stefani - What You Waiting For</li>
+<li>Gwen Stefani Feat Akon - The Sweet Escape</li>
+<li>Haddaway - What is love</li>
+<li>Haloo Helsinki! - Beibi</li>
+<li>Haloo Helsinki! - Jos mun pokka pettää</li>
+<li>Haloo Helsinki! - Maailman toisella puolen</li>
+<li>Haloo Helsinki! - Rakas</li>
+<li>Haloo Helsinki! - Vapaus käteen jää</li>
+<li>Hanna Pakarinen - Leave Me Alone</li>
+<li>Hannah Montana - The Best of Both Worlds</li>
+<li>Hanoi Rocks - A Day Late, A Dollar Short</li>
+<li>Happoradio - Che Guevara</li>
+<li>Happoradio - Puhu äänellä jonka kuulen</li>
+<li>Harry Styles - Adore you</li>
+<li>Harry Styles - As It Was</li>
+<li>Harry Styles - Watermelon sugar</li>
+<li>Hatsune Miku - Ievan Polkka</li>
+<li>Hazbin Hotel - Addict</li>
+<li>Hearts Grow - Yura yura (TV)</li>
+<li>Hector - Juodaan viinaa</li>
+<li>HIM - Join Me</li>
+<li>HIM - Killing Loneliness</li>
+<li>HIM - Right Here in My Arms</li>
+<li>HIM - Wings of a Butterfly</li>
+<li>Hinoi Team - Ike Ike</li>
+<li>Hoobastank - The Reason</li>
+<li>Hozier - Take me to church</li>
+<li>Icona Pop & Charli XCX - I Love It</li>
+<li>Idina Menzel - Let it go</li>
+<li>Ikimono Gakari - Blue bird (TV)</li>
+<li>Imagine Dragons - Bad Liar</li>
+<li>Imagine Dragons - Believer</li>
+<li>Imagine Dragons - Birds</li>
+<li>Imagine Dragons - Bleeding Out</li>
+<li>Imagine Dragons - Bones</li>
+<li>Imagine Dragons - Children of the Sky</li>
+<li>Imagine Dragons - Demons</li>
+<li>Imagine Dragons - Eyes Closed</li>
+<li>Imagine Dragons - Follow you</li>
+<li>Imagine Dragons - I Bet My Life</li>
+<li>Imagine Dragons - It's Time</li>
+<li>Imagine Dragons - Natural</li>
+<li>Imagine Dragons - On top of the world</li>
+<li>Imagine Dragons - Radioactive</li>
+<li>Imagine Dragons - Sharks</li>
+<li>Imagine Dragons - Thunder</li>
+<li>Imagine Dragons - Warriors</li>
+<li>Imagine Dragons - Whatever It Takes</li>
+<li>Imagine Dragons - Wrecked</li>
+<li>Imagine Dragons x JID - Enemy</li>
+<li>Indica - Ikuinen virta</li>
+<li>Indica - Linnansa vanki</li>
+<li>Inna ft. Daddy Yankee - More than friends</li>
+<li>INXS - Need you tonight</li>
+<li>INXS - New Sensation</li>
+<li>Irene Cara - Fame</li>
+<li>Irene Cara - Flashdance (What a feeling)</li>
+<li>Irina - Kymmenen Kirosanaa</li>
+<li>Irina - Pokka</li>
+<li>Iron Maiden - 2 minutes to midnight</li>
+<li>Iron Maiden - Fear of the Dark</li>
+<li>Iron Maiden - The Number of the Beast</li>
+<li>Iron Maiden - The Trooper</li>
+<li>J Karjalainen Ja Mustat Lasit - Doris</li>
+<li>Jack Black - Peaches</li>
+<li>Jamelia - Beware of the Dog</li>
+<li>James Blunt - You're Beautiful</li>
+<li>James Brown - I Feel Good</li>
+<li>James Morrison - You Give Me Something</li>
+<li>Jamiroquai - Cosmic Girl</li>
+<li>Jamiroquai - Virtual Insanity</li>
+<li>Jason Mraz - I'm yours</li>
+<li>Jay-Z Ft Alicia Keys - Empire State Of Mind</li>
+<li>Jenni Vartiainen - Duran Duran</li>
+<li>Jenni Vartiainen - Ihmisten edessä</li>
+<li>Jenni Vartiainen - Missä muruseni on</li>
+<li>Jennifer Lawrence - The Hanging Tree</li>
+<li>Jennifer Lopez - Let's get loud</li>
+<li>Jennifer Lopez & Pitbull - Dance Again</li>
+<li>Jennifer Lopez & Pitbull - On The Floor</li>
+<li>Jesse McCartney - Beautiful Soul</li>
+<li>Jessica Darrow - Surface Pressure (De Encanto)</li>
+<li>Jessie J - Do It Like a Dude</li>
+<li>Jessie J - Price Tag</li>
+<li>Jessie J, Ariana Grande & Nicki Minaj - Bang Bang</li>
+<li>Jet - Are You Gonna Be My Girl</li>
+<li>Joan Jett - Bad reputation</li>
+<li>Joan Jett & The Blackhearts - I Love Rock N' Roll</li>
+<li>Joe Esposito - Lady, lady, lady</li>
+<li>Joel Corry x MNEK - Head & Heart</li>
+<li>John Denver - Take Me Home, Country Roads</li>
+<li>John Legend - All of Me</li>
+<li>John Lennon - Imagine</li>
+<li>John Travolta - Greased Lightnin'</li>
+<li>Johnny Cash - Hurt</li>
+<li>Johnny Cash - Ring Of Fire</li>
+<li>JoJo - Leave (Get Out)</li>
+<li>Jon Secada - Just Another Day</li>
+<li>Jonas Blue & William Singe - Mama</li>
+<li>Jonathan Coulton - Still Alive</li>
+<li>Jonna Tervomaa - Läpikulkumatkalla</li>
+<li>Jonna Tervomaa - Rakkauden haudalla</li>
+<li>Journey - Any way you want it</li>
+<li>Journey - Don't Stop Believing</li>
+<li>Joy Division - Love Will Tear Us Apart</li>
+<li>Judas Priest - Breaking the Law</li>
+<li>Justice - Civilization</li>
+<li>Justin Bieber - Boyfriend</li>
+<li>Justin Bieber & Ludacris - Baby</li>
+<li>Justin Timberlake - Can't stop the feeling!</li>
+<li>Justin Timberlake - SexyBack</li>
+<li>K-ON! - Don't say lazy (TV)</li>
+<li>K-Pop  Demon Hunters (Saja Boys) - Your Idol</li>
+<li>K-Pop Demon Hunters (HUNTRX) - Golden</li>
+<li>K-Pop Demon Hunters (HUNTRX) - How It’s Done</li>
+<li>K-Pop Demon Hunters (HUNTRX) - What It Sounds Like</li>
+<li>K-Pop Demon Hunters (Rumi & Jinu) - Free</li>
+<li>K-Pop Demon Hunters (Rumi & Jinu) - Free [DUET]</li>
+<li>K-Pop Demon Hunters (Saja Boys) - Soda Pop</li>
+<li>Kagamine Len & Rin - Trick and Treat</li>
+<li>Kalafina - Kimi no Gin no Niwa</li>
+<li>Kana Hanazawa - Renai Circulation</li>
+<li>Kana Hanazawa - Renai Circulation (TV)</li>
+<li>Kanako Itou - Hacking to the Gate (TV)</li>
+<li>Kanako Itou - Sky Clad no Kansokusha (TV)</li>
+<li>Kansas - Carry On Wayward Son</li>
+<li>Kari Tapio - Myrskyn jälkeen</li>
+<li>Kate Bush - Running Up That Hill</li>
+<li>Katrina And The Waves - Walking On Sunshine</li>
+<li>Katy Perry - Dark Horse</li>
+<li>Katy Perry - Firework</li>
+<li>Katy Perry - Hot N Cold</li>
+<li>Katy Perry - I Kissed A Girl</li>
+<li>Katy Perry - Last Friday Night</li>
+<li>Katy Perry - Roar</li>
+<li>Katy Perry - Teenage Dream</li>
+<li>Katy Perry - The One That Got Away</li>
+<li>Katy Perry feat. Kanye West - E.T. (Remix)</li>
+<li>Katy Perry feat. Snoop Dogg - California Gurls</li>
+<li>KDA ft. Madison Beer and Kim Petras - VILLAIN</li>
+<li>Ke$ha - Tik Tok</li>
+<li>Ke$ha - We R Who We R</li>
+<li>Keane - Somwhere Only We Know</li>
+<li>Kelly Clarkson - Already gone</li>
+<li>Kelly Clarkson - Because of you</li>
+<li>Kelly Clarkson - Since U Been Gone</li>
+<li>Kelly Clarkson - Stronger (What Doesn't Kill You)</li>
+<li>Kelly Osbourne - Papa Don't Preach</li>
+<li>Kenji Ohtsuki & Zetsubou Shoujo-tachi - Kuusou Rumba (TV)</li>
+<li>Kenny Loggins - Footloose</li>
+<li>Kenny Rogers - The Gambler</li>
+<li>Kim Wilde - Kids In America</li>
+<li>Kings Of Leon - Sex On Fire</li>
+<li>Kirka x Bomfunk MC’s - Hetki lyö Freestyler MASHUP</li>
+<li>Kiss - Crazy Crazy Nights</li>
+<li>Kiss - Heaven's on fire</li>
+<li>Kiss - I was made for loving you</li>
+<li>Kiss - Rock and Roll All Nite</li>
+<li>Korn - Falling Away From Me</li>
+<li>Korn - Freak On A Leash</li>
+<li>Kotiteollisuus - Helvetistä itään</li>
+<li>Kotiteollisuus - Tämän taivaan alla</li>
+<li>Kouji Wada - Butter-fly</li>
+<li>Kouji Wada - Butter-fly (TV)</li>
+<li>Kouji Wada - The biggest dreamer</li>
+<li>Kristen Bell, Agatha Lee Monn & Katie Lopez - Do you want to build a snowman</li>
+<li>Kyary Pamyu Pamyu - PONPONPON</li>
+<li>Kylie Minogue - Can't Get You Out Of My Head</li>
+<li>Kylie Minogue - I Should Be So Lucky</li>
+<li>Kylie Minogue - Padam Padam</li>
+<li>Kymppilinja feat. Mariska - Minä</li>
+<li>Käärijä - Cha Cha Cha</li>
+<li>L'Arc~en~Ciel - Driver's High (TV)</li>
+<li>LaBelle - Lady Marmalade</li>
+<li>Lacuna Coil - Enjoy The Silence</li>
+<li>Lady Antebellum - Need You Now</li>
+<li>Lady Gaga - 911</li>
+<li>Lady Gaga - Abracadabra</li>
+<li>Lady GaGa - Alejandro</li>
+<li>Lady Gaga - Americano</li>
+<li>Lady Gaga - Applause</li>
+<li>Lady GaGa - Bad Romance</li>
+<li>Lady Gaga - Bloody Mary</li>
+<li>Lady GaGa - Born this way</li>
+<li>Lady Gaga - G.U.Y</li>
+<li>Lady Gaga - Hold my hand</li>
+<li>Lady GaGa - Judas</li>
+<li>Lady GaGa - LoveGame</li>
+<li>Lady Gaga - Monster</li>
+<li>Lady GaGa - Paparazzi</li>
+<li>Lady Gaga - Poker Face</li>
+<li>Lady GaGa - The Edge Of Glory</li>
+<li>Lady Gaga & Ariana Grande - Rain On Me</li>
+<li>Lady Gaga & BLACKPINK - Sour Candy</li>
+<li>Lady GaGa feat. Beyoncé - Telephone</li>
+<li>Lady GaGa feat. Colby O'Donis - Just Dance</li>
+<li>Lady Gaga, Bradley Cooper - Shallow</li>
+<li>Lana Del Rey - Video games</li>
+<li>Laura Branigan - Self Control</li>
+<li>Led Zeppelin - Stairway To Heaven</li>
+<li>Leevi And The Leavings - Laura Jenna Ellinoora Alexandra Camilla Jurvanen</li>
+<li>Leevi and the Leavings - Pohjois Karjala</li>
+<li>Len - Steal My Sunshine</li>
+<li>Lena Meyer-Landrut - Satellite</li>
+<li>Leonard Cohen - Hallelujah</li>
+<li>Level 42 - Running in the family</li>
+<li>Lewis Capaldi - Someone You Loved</li>
+<li>Lewis Capaldi - Wish you the best</li>
+<li>Lil Nas X - MONTERO (Call Me By Your Name)</li>
+<li>Lil Nas X feat. Billy Ray Cyrus - Old Town Road</li>
+<li>Lily Allen - Somewhere Only We Know</li>
+<li>Limp Bizkit - Behind Blue Eyes</li>
+<li>Limp Bizkit - My way</li>
+<li>Ling Tosite Sigure - Enigmatic Feeling (TV)</li>
+<li>Linkin Park - Blackout</li>
+<li>Linkin Park - Bleed It Out</li>
+<li>Linkin Park - Breaking the Habit</li>
+<li>Linkin Park - Burn it down</li>
+<li>Linkin Park - Don't Stay</li>
+<li>Linkin Park - Easier to Run</li>
+<li>Linkin Park - Faint</li>
+<li>Linkin Park - From the inside</li>
+<li>Linkin Park - In The End</li>
+<li>Linkin Park - Leave Out All The Rest</li>
+<li>Linkin Park - My December</li>
+<li>Linkin Park - Numb</li>
+<li>Linkin Park - One More Light</li>
+<li>Linkin Park - One step closer</li>
+<li>Linkin Park - Papercut</li>
+<li>Linkin Park - Shadow Of The Day</li>
+<li>Linkin Park - Somewhere I belong</li>
+<li>Linkin Park - The Messenger</li>
+<li>Linkin Park - Waiting for the end</li>
+<li>Linkin Park - What I've done</li>
+<li>Linkin Park - With You</li>
+<li>Lionel Richie - Hello</li>
+<li>LiSA - Akeboshi (TV)</li>
+<li>LiSA - Gurenge (TV)</li>
+<li>Little Big - UNO</li>
+<li>Little by little - Kimi monogatari</li>
+<li>Little by little - Kimi monogatari (TV)</li>
+<li>Lizzo - Juice</li>
+<li>LMFAO - Sexy and I Know It</li>
+<li>LMFAO, Lauren Bennett & Goon Rock - Party Rock Anthem</li>
+<li>Loituma - Ievan polkka</li>
+<li>Londonbeat - I've been thinking about you</li>
+<li>LONG SHOT PARTY - Distance (TV)</li>
+<li>Lorde - Royals</li>
+<li>Lordi - Hard Rock Hallelujah</li>
+<li>Loreen - Euphoria</li>
+<li>Loreen - Tattoo (En vivo)</li>
+<li>Lou Bega - Mambo No. 5</li>
+<li>Lovex - Guardian Angel</li>
+<li>Lynyrd Skynyrd - Sweet Home Alabama</li>
+<li>Maaya Sakamoto - Gravity (TV)</li>
+<li>Macklemore & Ryan Lewis Feat Wanz - Thrift Shop</li>
+<li>Madness - Our House</li>
+<li>Madonna - Don't cry for me Argentina</li>
+<li>Madonna - Hung Up</li>
+<li>Madonna - La Isla Bonita</li>
+<li>Madonna - Like A Prayer</li>
+<li>Madonna - Like a Virgin</li>
+<li>Madonna - Material Girl</li>
+<li>Madonna - Papa Don't Preach</li>
+<li>Madonna feat. Justin Timberlake - 4 Minutes</li>
+<li>Magic! - Rude</li>
+<li>Mai Yamane - Rain</li>
+<li>Maija Vilkkumaa - Ingalsin Laura</li>
+<li>Maija Vilkkumaa - Satumaa-tango</li>
+<li>Maj Karma - Ukkonen</li>
+<li>Majestic x Boney M. - Rasputin</li>
+<li>Mameshiba - Mameshiba!</li>
+<li>Manfred Mann - Do Wah Diddy Diddy</li>
+<li>Mariah Carey - All I Want For Christmas Is You</li>
+<li>Marilyn Manson - Sweet Dreams</li>
+<li>Marina & The Diamonds - Oh No!</li>
+<li>Marina & the Diamonds - Primadonna</li>
+<li>Marina and The Diamonds - How To Be A Heartbreaker</li>
+<li>Mark Ronson feat. Bruno Mars - Uptown Funk</li>
+<li>Mark Ronson ft  Miley Cyrus - Nothing Breaks Like a Heart</li>
+<li>Maroon 5 - Animals</li>
+<li>Maroon 5 - Harder to breathe</li>
+<li>Maroon 5 - Memories</li>
+<li>Maroon 5 - Misery</li>
+<li>Maroon 5 - She Will Be Loved</li>
+<li>Maroon 5 - This Love</li>
+<li>Maroon 5 - Wake up call</li>
+<li>Maroon 5 feat. Christina Aguilera - Moves Like Jagger</li>
+<li>Maroon 5 feat. Wiz Khalifa - Payphone</li>
+<li>Marvin Gaye And Tammii Tarrelle - Ain't No Mountain High Enough</li>
+<li>Massive Attack - Angel</li>
+<li>Massive Attack - Black Milk</li>
+<li>Massive Attack - Dissolved Girl</li>
+<li>Massive Attack - Protection</li>
+<li>Massive Attack - Teardrop</li>
+<li>Massive Attack - Unfinished Sympathy</li>
+<li>Matchbox Twenty - How Far We've Come</li>
+<li>Maustetytöt - Tein kai lottorivini väärin</li>
+<li>Maximum the Hormone - Akagi (TV)</li>
+<li>Maximum The Hormone - Koi No Mega Lover</li>
+<li>Maximum the Hormone - What's up, people! (TV)</li>
+<li>Maximum the Hormone - Zetsubou Billy</li>
+<li>MC Hammer - U Can't Touch This</li>
+<li>McFly - Obviously</li>
+<li>Meatloaf - I'd Do Anything for Love (But I Won't Do That)</li>
+<li>Meghan Trainor - All About That Bass</li>
+<li>Meghan Trainor - Made You Look</li>
+<li>Meredith Brooks - Bitch</li>
+<li>Metallica - Enter Sandman</li>
+<li>Metallica - Fade to Black</li>
+<li>Metallica - Master of Puppets</li>
+<li>Metallica - Nothing Else Matters</li>
+<li>Metro Boomin, Swae Lee & NAV - Calling</li>
+<li>Metro Boomin, Swae Lee, Lil Wayne & Offset - Annihilate</li>
+<li>Metro Station - Shake It</li>
+<li>MGMT - Kids</li>
+<li>Miami Sound Machine - Conga</li>
+<li>Michael Bublé feat. Mariah Carey - All I want for Christmas is you</li>
+<li>Michael Jackson - Bad</li>
+<li>Michael Jackson - Beat It</li>
+<li>Michael Jackson - Billie Jean</li>
+<li>Michael Jackson - Don't stop 'till you get enough</li>
+<li>Michael Jackson - Human nature</li>
+<li>Michael Jackson - Man In The Mirror</li>
+<li>Michael Jackson - Remember the time</li>
+<li>Michael Jackson - Smooth Criminal</li>
+<li>Michael Jackson - The Way You Make Me Feel</li>
+<li>Michael Jackson - They don't care about us</li>
+<li>Michael Jackson - Thriller</li>
+<li>Michael Jackson - Wanna be starting something</li>
+<li>Michael Jackson - You are not alone</li>
+<li>Mika - Grace Kelly</li>
+<li>Mika - Kick ass</li>
+<li>Mika - Relax, Take It Easy</li>
+<li>Miku Hatsune - Torinoko City (Remake)</li>
+<li>Miku Hatsune - Ura Omote Lovers</li>
+<li>Miku Hatsune & Gumi - Matryoshka</li>
+<li>Miley Cyrus - Flowers</li>
+<li>Miley Cyrus - Party In The U.S.A</li>
+<li>Miley Cyrus - We Can't Stop</li>
+<li>Miley Cyrus - Wrecking Ball</li>
+<li>Miljoonasade - Marraskuu</li>
+<li>MOB CHOIR - 99</li>
+<li>Modern Talking - Cheri, Cheri Lady</li>
+<li>Modern Talking - You're My Heart, You're My Soul</li>
+<li>Mohombi - Bumpy Ride</li>
+<li>Monkey Majik - Change</li>
+<li>Monty Phyton - Always look on the bright side of life</li>
+<li>Motorhead - Ace of Spades</li>
+<li>Movetron - Ei kenenkään maa</li>
+<li>Mr. President - Coco Jamboo</li>
+<li>Muse - Time is running out</li>
+<li>My Chemical Romance - I Don't Love You</li>
+<li>My Chemical Romance - I'm not okay (I promise)</li>
+<li>My Chemical Romance - Na Na Na</li>
+<li>My Chemical Romance - Teenagers</li>
+<li>My Chemical Romance - Welcome to the black parade</li>
+<li>Måneskin - The Loneliest</li>
+<li>N'Sync - Bye Bye Bye</li>
+<li>N'Sync - It's Gonna Be Me</li>
+<li>Natalie Imbruglia - Torn</li>
+<li>Natasha Bedingfield - Unwritten</li>
+<li>Neil Diamond - Sweet Caroline</li>
+<li>Neil Finn - Song of the Lonely Mountain</li>
+<li>Nelja Baritonia - Pop-musiikkia</li>
+<li>Nelja Ruusua - Hunningolla</li>
+<li>Neljä Ruusua - Juppihippipunkkari</li>
+<li>Neljä Ruusua - Valuva Taivas</li>
+<li>Nelly Furtado - All Good Things</li>
+<li>Nelly Furtado - Maneater</li>
+<li>Nelly Furtado - Promiscuous</li>
+<li>Neon 2 - Tässä talossa</li>
+<li>Neon Trees - Animal</li>
+<li>Neumann - Naiselleni</li>
+<li>Nick Cave and Kylie Minogue - Where the Wild Roses Grow</li>
+<li>Nickelback - Hero</li>
+<li>Nickelback - How You Remind Me</li>
+<li>Nickelback - Someday</li>
+<li>Nicki Minaj - Pound The Alarm</li>
+<li>Nicki Minaj - Starships</li>
+<li>Nicki Minaj - Va Va Voom</li>
+<li>NICO Touches the Walls - Broken Youth</li>
+<li>NICO Touches the Walls - Hologram</li>
+<li>NICO Touches the Walls - Hologram (TV)</li>
+<li>Nightmare - Alumina</li>
+<li>Nightmare - Alumina (TV)</li>
+<li>Nightmare - Raison d'être</li>
+<li>Nightmare - The world</li>
+<li>Nightwish - Eva</li>
+<li>Nightwish - Nemo</li>
+<li>Nightwish - Over The Hills And Far Away</li>
+<li>Nightwish - Taikatalvi</li>
+<li>Nightwish - Wish I Had An Angel</li>
+<li>Nightwish feat. Jonsu - Erämaan Viimeinen</li>
+<li>Nik Kershaw - The Riddle</li>
+<li>Nirvana - Come As You Are</li>
+<li>Nirvana - Drain You</li>
+<li>Nirvana - Heart-Shaped Box</li>
+<li>Nirvana - Lithium</li>
+<li>Nirvana - Smells Like Teen Spirit</li>
+<li>Nirvana - The Man Who Sold The World</li>
+<li>No Doubt - Don't speak</li>
+<li>Nobody Knows - Hero's Come Back (TV)</li>
+<li>Nothing's Carved In Stone - Out of Control</li>
+<li>Nothing's Carved In Stone - Spirit Inspiration</li>
+<li>Nylon Beat - Rakastuin mä looseriin</li>
+<li>Nylon Beat - Satasen laina</li>
+<li>Nylon Beat - Seksi vie ja taksi tuo</li>
+<li>Oasis - Champagne Supernova</li>
+<li>Oasis - Wonderwall</li>
+<li>OK Go - Here It Goes Again</li>
+<li>Olavi Uusivirta - On niin helppoo olla onnellinen</li>
+<li>Olivia Rodrigo - Drivers license</li>
+<li>Olivia Rodrigo - good 4 u</li>
+<li>ON OFF - Rinne-Rondo</li>
+<li>One Direction - Kiss You</li>
+<li>One Direction - Little things</li>
+<li>One Direction - What Makes You Beautiful</li>
+<li>One Republic - Apologize</li>
+<li>OneRepublic - All the Right Moves</li>
+<li>OneRepublic - Counting Stars</li>
+<li>OneRepublic - Love runs out</li>
+<li>Orange Range - Asterisk (TV)</li>
+<li>Orange Range - Ikenai Taiyou (TV)</li>
+<li>Oranges & Lemons - Soramimi Cake (TV)</li>
+<li>Ore Ska Band - Pinocchio (TV)</li>
+<li>OutKast - Hey Ya!</li>
+<li>OutKast - Ms. Jackson</li>
+<li>OutKast - Roses</li>
+<li>Owl City - Fireflies</li>
+<li>Ozzy Osbourne - Mr. Crowley</li>
+<li>P!nk - Blow Me (One Last Kiss)</li>
+<li>P!nk - Fuckin' Perfect</li>
+<li>P!nk - Funhouse</li>
+<li>P!nk - Lets get this party started</li>
+<li>P!nk - Raise your glass</li>
+<li>P!nk - So what</li>
+<li>P!nk - Trustfall</li>
+<li>P!nk - Try</li>
+<li>P!nk - What about us</li>
+<li>P!nk - Who Knew</li>
+<li>P!nk feat. Nate Ruess - Just give me a reason</li>
+<li>Panic at the Disco - But It's Better If You Do</li>
+<li>Panic at the Disco - I Write Sins Not Tragedies</li>
+<li>Panic at the Disco - Nine in the Afternoon</li>
+<li>Panic At The Disco - The Ballad Of Mona Lisa</li>
+<li>Panic! At The Disco - Into The Unknown</li>
+<li>Papa Roach - Getting Away With Murder</li>
+<li>Papa Roach - Last Resort</li>
+<li>Paramore - Brick By Boring Brick</li>
+<li>Paramore - Crushcrushcrush</li>
+<li>Paramore - Decode</li>
+<li>Paramore - Emergency</li>
+<li>Paramore - Hard Times</li>
+<li>Paramore - Ignorance</li>
+<li>Paramore - Misery Business</li>
+<li>Paramore - Monster</li>
+<li>Paramore - Still Into You</li>
+<li>Paramore - The Only Exception</li>
+<li>Passenger - Let her go</li>
+<li>Patrick Swayze Feat. Wendy Fraser - She´s like the wind</li>
+<li>Patsy Cline - Crazy</li>
+<li>Patti Smith Group - Because The Night</li>
+<li>Paul McCartney - No more lonely nights</li>
+<li>Paul Parker - Desire</li>
+<li>Paul Young - Everytime you go away</li>
+<li>Paula Koivuniemi - Kuuntelen Tomppaa</li>
+<li>Pearl Jam - Alive</li>
+<li>Pelle Miljoona Oy - Moottoritie on kuuma</li>
+<li>Pendulum - The Tempest</li>
+<li>Pendulum - Watercolour</li>
+<li>Pendulum - Witchcraft</li>
+<li>Perfume - Chocolate Disco</li>
+<li>Pet Shop Boys - Always On My Mind</li>
+<li>Peter Gabriel - Sledgehammer</li>
+<li>Peter Schilling - Major Tom (Coming Home)</li>
+<li>Petula Clark - Downtown</li>
+<li>Pharrell Williams - Happy</li>
+<li>Phil Collins - Against All Odds</li>
+<li>Phil Collins - In the air tonight</li>
+<li>Phil Collins - You'll be in my heart</li>
+<li>Piko Taro - Pen Pineapple Apple Pen</li>
+<li>Pink Floyd - Money</li>
+<li>Pink Floyd - Wish You Were Here</li>
+<li>Pink Ft. Nate Ruess - Just Give Me A Reason</li>
+<li>Pinkfong con Luis Fonsi - Baby shark</li>
+<li>Pitbull & Christina Aguilera - Feel This Moment</li>
+<li>Pitbull & Ke$ha - Timber</li>
+<li>Pitbull feat. John Ryan - Fireball</li>
+<li>Pitbull feat. Ne-Yo, Afrojack & Nayer - Give me everything</li>
+<li>Pixies - Where Is My Mind</li>
+<li>Placebo - Running Up That Hill</li>
+<li>Placebo - Song To Say Goodbye</li>
+<li>Placebo - The Bitter End</li>
+<li>Plain White T's - Hey There Delilah</li>
+<li>PMMP - Joutsenet</li>
+<li>PMMP - Matkalaulu</li>
+<li>PMMP - Pikkuveli</li>
+<li>PMMP - Rusketusraidat</li>
+<li>PMMP - Tässä Elämä On</li>
+<li>Poison - Every Rose Has Its Thorn</li>
+<li>Popeda - Kuuma kesä</li>
+<li>Popeda - Tahdotko Mut Tosiaan</li>
+<li>Porno graffiti - Melissa</li>
+<li>Porno graffiti - Melissa (TV)</li>
+<li>Porter Robinson & Madeon - Shelter</li>
+<li>Prince - Kiss</li>
+<li>Prince - Purple Rain</li>
+<li>Prince - When Doves Cry</li>
+<li>Psy - Gangnam Style</li>
+<li>Psy - Gentleman</li>
+<li>Pussycat Dolls - Don't Cha (Radio Edit)</li>
+<li>Queen - A kind of magic</li>
+<li>Queen - Another One Bites the Dust</li>
+<li>Queen - Bicycle Race</li>
+<li>Queen - Body language</li>
+<li>Queen - Bohemian Rhapsody</li>
+<li>Queen - Breakthru</li>
+<li>Queen - Crazy Little Thing Called Love</li>
+<li>Queen - Don't Stop Me Now</li>
+<li>Queen - Fat Bottomed Girls</li>
+<li>Queen - Friends will be friends</li>
+<li>Queen - Hammer to fall</li>
+<li>Queen - I Want It All</li>
+<li>Queen - I Want to Break Free</li>
+<li>Queen - I'm in Love With My Car</li>
+<li>Queen - Innuendo</li>
+<li>Queen - It's a hard life</li>
+<li>Queen - Killer Queen</li>
+<li>Queen - Las palabras de amor (The words of love)</li>
+<li>Queen - Love of my life</li>
+<li>Queen - One Vision</li>
+<li>Queen - Play the Game</li>
+<li>Queen - Princes of the Universe</li>
+<li>Queen - Radio Ga Ga</li>
+<li>Queen - Seven Seas of Rhye</li>
+<li>Queen - Somebody to Love</li>
+<li>Queen - The Show Must Go On</li>
+<li>Queen - These Are the Days of Our Lives</li>
+<li>Queen - Tie Your Mother Down</li>
+<li>Queen - Too Much Love Will Kill You</li>
+<li>Queen - We Are the Champions</li>
+<li>Queen - We Will Rock You</li>
+<li>Queen - Who Wants to Live Forever</li>
+<li>Queen - You're My Best Friend</li>
+<li>Queen & David Bowie - Under Pressure</li>
+<li>Queensrÿche - Silent Lucidity</li>
+<li>R. Kelly - I believe I can fly</li>
+<li>R.E.M. - Everybody Hurts</li>
+<li>R.E.M. - It's The End Of The World As We Know It (And I Feel Fine)</li>
+<li>R.E.M. - Losing My Religion</li>
+<li>Radiohead - Creep</li>
+<li>Radiohead - Karma Police</li>
+<li>Rag'n'Bone Man - Human</li>
+<li>Ram Jam - Black Betty</li>
+<li>Ramones - Blitzkrieg Bop</li>
+<li>Ray Charles - Hit the Road Jack</li>
+<li>Ray Parker Jr. - Ghostbusters</li>
+<li>Red Hot Chili Peppers - Californication</li>
+<li>Red Hot Chili Peppers - Dani California</li>
+<li>Red Hot Chili Peppers - Give It Away</li>
+<li>Red Hot Chili Peppers - Scar Tissue</li>
+<li>Red Hot Chili Peppers - Under the bridge</li>
+<li>Rednex - Cotton Eye Joe</li>
+<li>Rema & Selena Gomez - Calm Down</li>
+<li>Retropop - Pieni ja ihmeellinen</li>
+<li>Richard Marx - Right here waiting</li>
+<li>Rick Astley - Never gonna give you up</li>
+<li>Rick Astley - Together Forever</li>
+<li>Rick James - Super Freak</li>
+<li>Ricky Martin - She bangs</li>
+<li>Right Said Fred - I'm Too Sexy</li>
+<li>Rihanna - Diamonds</li>
+<li>Rihanna - Disturbia</li>
+<li>Rihanna - Don't stop the music</li>
+<li>Rihanna - Man Down</li>
+<li>Rihanna - Only Girl (In The World)</li>
+<li>Rihanna - Pon De Replay</li>
+<li>Rihanna - S&M</li>
+<li>Rihanna - SOS</li>
+<li>Rihanna - Umbrella</li>
+<li>Rihanna & Ne-Yo - Hate That I Love You</li>
+<li>Rihanna feat. Calvin Harris - We Found Love</li>
+<li>Rihanna feat. Drake - Work</li>
+<li>Rihanna feat. Eminem - Love The Way You Lie (Part II)</li>
+<li>Rihanna feat. Mikky Ekko - Stay</li>
+<li>Rise Against - Prayer of the refugee</li>
+<li>Riyu Kosaka - Danzai no hana ~Guilty sky~ (TV)</li>
+<li>Roachford - Only To Be With You</li>
+<li>Robbie Williams - Angels</li>
+<li>Robbie Williams - Candy</li>
+<li>Robbie Williams - Let Me Entertain You</li>
+<li>Robbie Williams & Nicole Kidman - Something Stupid</li>
+<li>Robbie Williams and Kylie Minogue - Kids</li>
+<li>Roberta Flack - Killing me softly with his song</li>
+<li>Rockwell - Somebody's watching me</li>
+<li>Rod Stewart - Da ya think I´m sexy</li>
+<li>Ronan Keating - When you say nothing at all</li>
+<li>Rookiez is Punk'd - Complication (TV)</li>
+<li>Rosa - Europe's Living A Celebration</li>
+<li>Roxette - How do you do!</li>
+<li>Roxette - Joyride</li>
+<li>Roxette - Listen To Your Heart</li>
+<li>Roy Orbison - Oh, pretty woman</li>
+<li>Rufus Wainwright - Hallelujah</li>
+<li>Rufus Wainwright - Hallelujah (Shrek version)</li>
+<li>Run DMC - It's Tricky</li>
+<li>Ryan Gosling - I'm just Ken</li>
+<li>Saara Aalto - Monsters</li>
+<li>Sabrina Carpenter - Thumbs</li>
+<li>Sadie - This is Halloween</li>
+<li>Sam Cooke - Wonderful World</li>
+<li>Sam Smith - I'm Not The Only One</li>
+<li>Sam Smith - Stay with me</li>
+<li>Sam Smith, Kim Petras - Unholy</li>
+<li>Samuli Edelmann - Tuhat Yötä</li>
+<li>Samuli Edelmann & Sani - Tuhat yötä</li>
+<li>Sanni - 2080-luvulla</li>
+<li>Sanni - Jacuzzi</li>
+<li>Sanni - Sit ku mä oon vapaa</li>
+<li>Santana feat. Chad Kroger - Into The Night</li>
+<li>Santiano and Nathan Evans - Wellerman</li>
+<li>Sarah Brightman & Steve Harley - The Phantom Of The Opera</li>
+<li>Savage Garden - Truly Madly Deeply</li>
+<li>Scandinavian Music Group - Hölmö rakkaus</li>
+<li>Scandinavian Music Group - Minne katosi päivät</li>
+<li>Scatman John - Scatman (Ski-ba-bop-ba-dop-bop)</li>
+<li>Scissor Sisters - I Don't Feel Like Dancin'</li>
+<li>Scissor Sisters - Take your mama</li>
+<li>Scorpions - Rock You Like a Hurricane</li>
+<li>Scorpions - Still Loving You</li>
+<li>Seal - Crazy</li>
+<li>Seal - Kiss From A Rose</li>
+<li>Sean Kingston - Beautiful Girls</li>
+<li>Seether feat. Amy Lee - Broken</li>
+<li>Selena Gomez  & The Scene - Who Says</li>
+<li>Selena Gomez - Single Soon</li>
+<li>Selena Gomez & Marshmello - Wolves</li>
+<li>Selena Gomez & The Scene - Love You Like A Love Song</li>
+<li>Selena Gomez & The Scene - Naturally</li>
+<li>September - Satellites</li>
+<li>Shaggy ft. Rikrok - It wasn't me</li>
+<li>Shakira - Gypsy</li>
+<li>Shakira - She wolf</li>
+<li>Shakira - Whenever wherever</li>
+<li>Shakira & Pitbull - Rabiosa</li>
+<li>Shakira and Wyclef Jean - Hips don't lie</li>
+<li>Shania Twain - Man! I Feel Like a Woman!</li>
+<li>Shania Twain - You're still the one</li>
+<li>Shanice - I love your smile</li>
+<li>Sia - California Dreamin'</li>
+<li>Sia - Chandelier</li>
+<li>Sia - Cheap Thrills</li>
+<li>Sia - Elastic Heart</li>
+<li>Sia - Santa's Coming For Us</li>
+<li>Sia - Snowman</li>
+<li>Sia - The Greatest</li>
+<li>Sia - Unstoppable</li>
+<li>SID - Rain</li>
+<li>Simon & Garfunkel - The Sound of Silence</li>
+<li>Simple Minds - Don't You Forget About Me</li>
+<li>Simple Plan - Addicted</li>
+<li>Simple Plan - I'm Just A Kid</li>
+<li>Simple Plan - Perfect</li>
+<li>Simple Plan - Shut up</li>
+<li>Simple Plan - Untitled</li>
+<li>Simple Plan - Welcome To My Life</li>
+<li>Slipknot - Before I Forget</li>
+<li>Slipknot - Duality</li>
+<li>Slipknot - Psychosocial</li>
+<li>Slipknot - Sulfur</li>
+<li>Smash Mouth - All Star</li>
+<li>Smash Mouth - I'm a believer</li>
+<li>Smile DK - Butterfly</li>
+<li>Smokie - Living Next Door To Alice</li>
+<li>Snow Patrol - Chasing Cars</li>
+<li>Soft Cell - Tainted Love</li>
+<li>Sophie Ellis Bextor - Murder on the Dancefloor</li>
+<li>Spandau Ballet - Gold</li>
+<li>Spandau Ballet - True</li>
+<li>Spice Girls - 2 Become 1</li>
+<li>Spice Girls - Love Thing</li>
+<li>Spice Girls - Mama</li>
+<li>Spice Girls - Never Give Up On The Good Times</li>
+<li>Spice Girls - Say You'll Be There</li>
+<li>Spice Girls - Something Kinda Funny</li>
+<li>Spice Girls - Spice Up Your Life</li>
+<li>Spice Girls - Stop</li>
+<li>Spice Girls - Viva forever</li>
+<li>Spice Girls - Wannabe</li>
+<li>Spiderbait - Black Betty</li>
+<li>Spin Doctors - Two Princes</li>
+<li>Starship - Nothing's Gonna Stop Us Now</li>
+<li>Stella - Aamun kuiskaus</li>
+<li>Stella - Korkokengät</li>
+<li>Steppenwolf - Born to be wild</li>
+<li>Steps - Deeper Shade Of Blue</li>
+<li>Stereophonics - Dakota</li>
+<li>Stereopony - Tsukiakari no Michishirube (TV)</li>
+<li>Steve Conte - Stray (TV)</li>
+<li>Steven Universe - Stronger Than You</li>
+<li>Stevie Wonder - Superstition</li>
+<li>Stig - Roy Orbison</li>
+<li>Sting - Desert Rose</li>
+<li>Sting - Englishman in New York</li>
+<li>Sting - Shape of My Heart</li>
+<li>Sublime - Santeria</li>
+<li>Sugababes - Push The Button</li>
+<li>Sugababes - Round Round</li>
+<li>Sugababes - Too Lost In You</li>
+<li>Sukima Switch - Golden time lover</li>
+<li>Sukima Switch - Golden time lover (TV)</li>
+<li>Sum 41 - Still waiting</li>
+<li>Sunrise Ave - Fairytale Gone Bad</li>
+<li>Supercell - Kimi No Shiranai Monogatari (TV)</li>
+<li>Supertramp - The Logical Song</li>
+<li>Surface - Sunao na Niji (TV)</li>
+<li>Survivor - Eye Of The Tiger</li>
+<li>Suurlähettiläät - Elokuun 11</li>
+<li>Swedish House Mafia & John Martin - Don't You Worry Child</li>
+<li>System of a Down - Aerials</li>
+<li>System of a Down - Chop Suey!</li>
+<li>System Of A Down - I-E-A-I-A-I-O</li>
+<li>System of a Down - Lonely Day</li>
+<li>System of a Down - Toxicity</li>
+<li>t.A.T.u. - 30 Minutes</li>
+<li>t.A.T.u. - All About Us</li>
+<li>t.A.T.u. - All the things she said</li>
+<li>t.A.T.u. - Clowns (Can You See Me Now)</li>
+<li>t.A.T.u. - Dangerous And Moving</li>
+<li>t.A.T.u. - Malchik Gay</li>
+<li>t.A.T.u. - Not gonna get us</li>
+<li>Taio Cruz - Break Your Heart</li>
+<li>Taio Cruz feat. Flo Rida - Hangover</li>
+<li>Taiska - Mombasa</li>
+<li>Take That - Back For Good</li>
+<li>Take That - Relight My Fire</li>
+<li>Talk Talk - It's my life</li>
+<li>Talking Heads - Once in a Lifetime</li>
+<li>Talking Heads - Psycho Killer</li>
+<li>Tangerine Kitty - Dumb ways to die</li>
+<li>Tarzan - Son Of Man</li>
+<li>Taylor Swift - All Too Well</li>
+<li>Taylor Swift - Anti-Hero</li>
+<li>Taylor Swift - Bad Blood</li>
+<li>Taylor Swift - Better Than Revenge</li>
+<li>Taylor Swift - Blank Space</li>
+<li>Taylor Swift - Cold as You</li>
+<li>Taylor Swift - Dear John</li>
+<li>Taylor Swift - Fearless</li>
+<li>Taylor Swift - Forever And Always</li>
+<li>Taylor Swift - I Knew You Were Trouble</li>
+<li>Taylor Swift - I'm Only Me When I'm With You</li>
+<li>Taylor Swift - Love Story</li>
+<li>Taylor Swift - Mean</li>
+<li>Taylor Swift - Out Of The Woods</li>
+<li>Taylor Swift - Picture to Burn</li>
+<li>Taylor Swift - Shake It Off</li>
+<li>Taylor Swift - Sparks Fly</li>
+<li>Taylor Swift - We Are Never Ever Getting Back Together</li>
+<li>Taylor Swift - White Horse</li>
+<li>Taylor Swift feat. Kendrick Lamar - Bad Blood (Remix)</li>
+<li>Tears for Fears - Everybody Wants To Rule The World</li>
+<li>Tears For Fears - Head over heels</li>
+<li>Tears for Fears - Mad World</li>
+<li>Tears For Fears - Shout</li>
+<li>Technotronic - Pump Up the Jam</li>
+<li>Tenacious D - Beelzeboss (The Final Showdown)</li>
+<li>Tenacious D - Classico</li>
+<li>Tenacious D - Master Exploder</li>
+<li>The All-American Rejects - Dirty Little Secret</li>
+<li>The All-American Rejects - Gives you hell</li>
+<li>The Animals - The House of the Rising Sun</li>
+<li>The Aristocats - Everybody Wants to Be a Cat</li>
+<li>The Beach Boys - Kokomo</li>
+<li>The Beatles - A Hard Day's Night</li>
+<li>The Beatles - Across The Universe</li>
+<li>The Beatles - All You Need Is Love</li>
+<li>The Beatles - And I Love Her</li>
+<li>The Beatles - Because</li>
+<li>The Beatles - Boys</li>
+<li>The Beatles - Day Tripper</li>
+<li>The Beatles - Dear Prudence</li>
+<li>The Beatles - Don't Let Me Down</li>
+<li>The Beatles - Drive My Car</li>
+<li>The Beatles - From Me To You</li>
+<li>The Beatles - Girl</li>
+<li>The Beatles - Good Morning, Good Morning</li>
+<li>The Beatles - Hello, Goodbye</li>
+<li>The Beatles - Her Majesty</li>
+<li>The Beatles - Here Comes The Sun</li>
+<li>The Beatles - Hey Jude</li>
+<li>The Beatles - I Feel Fine</li>
+<li>The Beatles - I Want To Hold Your Hand</li>
+<li>The Beatles - I'm Looking Through You</li>
+<li>The Beatles - I've Got A Feeling</li>
+<li>The Beatles - If I Needed Someone</li>
+<li>The Beatles - Let It Be</li>
+<li>The Beatles - Maxwell's Silver Hammer</li>
+<li>The Beatles - Nowhere Man</li>
+<li>The Beatles - Oh! Darling</li>
+<li>The Beatles - Please Please Me</li>
+<li>The Beatles - She Loves You</li>
+<li>The Beatles - Something</li>
+<li>The Beatles - The End</li>
+<li>The Beatles - Ticket To Ride</li>
+<li>The Beatles - Twist and shout</li>
+<li>The Beatles - Yellow Submarine</li>
+<li>The Beatles - Yesterday</li>
+<li>The Beautiful South - A Little Time</li>
+<li>The Beautiful South - Dream a little dream</li>
+<li>The Black Eyed Peas - Boom Boom Pow</li>
+<li>The Black Eyed Peas - Don't Stop The Party</li>
+<li>The Black Eyed Peas - I Gotta Feeling</li>
+<li>The Black Eyed Peas - Just Can't Get Enough</li>
+<li>The Black Eyed Peas - Meet me halfway</li>
+<li>The Black Eyed Peas - Pump It</li>
+<li>The Black Eyed Peas - Rock That Body</li>
+<li>The Black Eyed Peas - Shut Up</li>
+<li>The Black Eyed Peas - The Time (Dirty Bit)</li>
+<li>The Black Eyed Peas - Where is the love</li>
+<li>The Black Eyed Peas, Shakira - GIRL LIKE ME</li>
+<li>The Black Keys - Lonely boy</li>
+<li>The Bloodhound Gang - The bad touch</li>
+<li>The Cardigans - Lovefool</li>
+<li>The Cardigans - My Favourite Game</li>
+<li>The Chainsmokers ft. Coldplay - Something Just Like This</li>
+<li>The Chainsmokers ft. Daya - Don't let me down</li>
+<li>The Choirboys - Run to Paradise</li>
+<li>The Clash - I Fought the Law</li>
+<li>The Clash - Should I Stay Or Should I GO</li>
+<li>The Corrs - Breathless</li>
+<li>The Corrs - Dreams</li>
+<li>The Cranberries - Animal Instinct</li>
+<li>The Cranberries - Linger</li>
+<li>The Cranberries - Zombie</li>
+<li>The Cure - Boys Don't Cry</li>
+<li>The Cure - Fascination Street</li>
+<li>The Cure - Just Like Heaven</li>
+<li>The Darkness - I Believe in a Thing Called Love</li>
+<li>The Divinyls - I Touch Myself</li>
+<li>The Doors - People Are Strange</li>
+<li>The Doors - Riders on the storm</li>
+<li>The Eagles - Hotel California</li>
+<li>The Foundations - Build Me Up Buttercup</li>
+<li>The Fray - How To Save A Life</li>
+<li>The Fray - Over My Head (Cable Car)</li>
+<li>The Gap Band - Burn rubber on me</li>
+<li>The Greatest Showman - This is me</li>
+<li>The Hives - Hate To Say I Told You So</li>
+<li>The Hives - Main Offender</li>
+<li>The Hives - Tick Tick Boom</li>
+<li>The Human League - Don't You Want Me</li>
+<li>The Human League - Human</li>
+<li>The Jackson 5 - I Want You Back</li>
+<li>The Jungle Book - Bare Necessities</li>
+<li>The Jungle Book - I Wanna Be Like You</li>
+<li>The Kid Laroi & Justin Bieber - Stay</li>
+<li>The Kid Laroi and Miley Cyrus - Without You</li>
+<li>The Killers - Human</li>
+<li>The Killers - Mr. Brightside</li>
+<li>The Killers - Smile Like You Mean It</li>
+<li>The Killers - Somebody Told Me</li>
+<li>The Killers - When You Were Young</li>
+<li>The Knack - My Sharona</li>
+<li>The Lion King - I Just Can't Wait To Be King</li>
+<li>The Lumineers - Ho Hey</li>
+<li>The Nightmare Before Christmas - This is Halloween</li>
+<li>The Offspring - Come Out and Play (Keep 'Em Separated)</li>
+<li>The Offspring - Pretty fly (for a white guy)</li>
+<li>The Offspring - The kids aren't alright</li>
+<li>The Offspring - You're gonna go far, kid</li>
+<li>The Outfield - Your Love</li>
+<li>The Police - Every Breath You Take</li>
+<li>The Police - Message in a bottle</li>
+<li>The Police - Roxanne</li>
+<li>The Proclaimers - I'm gonna be (500 miles)</li>
+<li>The Raconteurs - Steady, As She Goes</li>
+<li>The Rasmus - F-F-F-Falling</li>
+<li>The Rasmus - In the Shadows</li>
+<li>The Rasmus - Livin' in a World Without You</li>
+<li>The Rasmus - No fear</li>
+<li>The Righteous Brothers - Unchained Melody</li>
+<li>The Rocky Horror Picture Show - Time Warp</li>
+<li>The Rolling Stones - Angie</li>
+<li>The Rolling Stones - Gimme Shelter</li>
+<li>The Rolling Stones - Paint It, Black</li>
+<li>The Rolling Stones - Satisfaction (I Can't Get No)</li>
+<li>The Rolling Stones - Sympathy For The Devil</li>
+<li>The Runaways - Cherry Bomb</li>
+<li>The Scorpions - Wind of Change</li>
+<li>The Simpsons - Happy Birthday, Lisa</li>
+<li>The Smiths - Girlfriend in a coma</li>
+<li>The Smiths - Heaven Knows I'm Miserable Now</li>
+<li>The Smiths - How Soon is Now</li>
+<li>The Supermen Lovers feat. Mani Hoffman - Starlight</li>
+<li>The Supremes - Stop! In The Name Of Love</li>
+<li>The Ting Tings - Great DJ</li>
+<li>The Ting Tings - That's Not My Name</li>
+<li>The Twins - Face to face, heart to heart</li>
+<li>The Verve - Bitter Sweet Symphony</li>
+<li>The Weather Girls - It's Raining Men</li>
+<li>The Weeknd - Blinding Lights</li>
+<li>The Weeknd - In Your Eyes</li>
+<li>The Weeknd - Out of Time</li>
+<li>The Weeknd - Save your tears</li>
+<li>The Weeknd - Take My Breath</li>
+<li>The Weeknd ft. Daft Punk - I feel it coming</li>
+<li>The Weeknd ft. Daft Punk - Starboy</li>
+<li>The White Stripes - Seven Nation Army</li>
+<li>The Who - Behind Blue Eyes</li>
+<li>Theatre Brook - Uragiri no Yuuyake (TV)</li>
+<li>Thin Lizzy - The Boys Are Back In Town</li>
+<li>Thompson Twins - Hold Me Now</li>
+<li>Thompson Twins - Lay Your Hands On Me</li>
+<li>Three Days Grace - Animal I Have Become</li>
+<li>Three Days Grace - I Hate Everything About You</li>
+<li>Three Days Grace - Time Of Dying</li>
+<li>THREE LIGHTS DOWN KINGS - NEVER SAY NEVER (TV)</li>
+<li>Tiktak - Heilutaan</li>
+<li>TikTak - Lopeta</li>
+<li>Timbaland feat. One Republic - Apologize</li>
+<li>Tina Charles - I love to love</li>
+<li>Tina Turner - Afterglow</li>
+<li>Tina Turner - Private dancer</li>
+<li>Tina Turner - The Best</li>
+<li>Tina Turner - We Don't Need Another Hero (Thunderdome)</li>
+<li>Tina Turner - What's Love Got To Do With It</li>
+<li>TLC - Waterfalls</li>
+<li>Tokio Hotel - Automatic</li>
+<li>Tom Jones - Delilah</li>
+<li>Tom Jones - It's Not Unusual</li>
+<li>Tom Jones - Sex Bomb</li>
+<li>Tom Jones - What's New Pussycat</li>
+<li>Tommy Cash - Espresso Macchiato</li>
+<li>Tomofumi Tanizawa - Kimi ni Todoke (TV)</li>
+<li>Tomohisa Yamashita - Never Lose (TV)</li>
+<li>Tones And I - Dance Monkey</li>
+<li>Toni Braxton - Un-break My Heart</li>
+<li>Toto - Africa</li>
+<li>Toto - Hold The Line</li>
+<li>Toy Story - You Got A Friend In Me</li>
+<li>Tracy Chapman - Fast Car</li>
+<li>Train - Hey, Soul Sister</li>
+<li>TRUSTRICK - Miraikei Answer (TV)</li>
+<li>Twenty One Pilots - Heathens</li>
+<li>Twenty One Pilots - House Of Gold</li>
+<li>Twenty One Pilots - Stressed Out</li>
+<li>Twisted Sister - We're Not Gonna Take It</li>
+<li>U2 - One</li>
+<li>U2 - Vertigo</li>
+<li>U2 - With or without you</li>
+<li>UB40 - Kingston Town</li>
+<li>UB40 - Red red wine</li>
+<li>Ultra Bra - Sinä lähdit pois</li>
+<li>Uniklubi - Huomenna</li>
+<li>Uniklubi - Kaikki mitä mä annoin</li>
+<li>Uniklubi - Rakkautta ja piikkilankaa</li>
+<li>UNISON SQUARE GARDEN - Sugar Song to Bitter Step (TV)</li>
+<li>USA for Africa - We Are the World</li>
+<li>Usher & Pitbull - DJ Got Us Falling In Love Again</li>
+<li>Utada Hikaru - Hikari</li>
+<li>Utada Hikaru - Simple And Clean</li>
+<li>UVERworld - CHANCE! (TV)</li>
+<li>UVERworld - Colors of the Heart</li>
+<li>Van Halen - Hot for teacher</li>
+<li>Van Morrison - Brown Eyed Girl</li>
+<li>Vanessa Carlton - A thousand miles</li>
+<li>Vanilla Ice - Ice Ice Baby</li>
+<li>Vengaboys - Boom, Boom, Boom, Boom!!</li>
+<li>Vesa-Matti Loiri - Hyvää puuta</li>
+<li>Vesala - Tequila</li>
+<li>Vesala - Tytöt ei soita kitaraa</li>
+<li>Vicky Rosti - Sata salamaa</li>
+<li>Village People - In the Navy</li>
+<li>Village People - Macho man</li>
+<li>Village People - YMCA</li>
+<li>Vilma Alina feat. Teflon Brothers - Juha88</li>
+<li>ViViD - Yume ~Mugen no Kanata~ (TV)</li>
+<li>Von Hertzen Brothers - Let Thy Will Be Done</li>
+<li>Weezer - Buddy Holly</li>
+<li>Westlife - Flying Without Wings</li>
+<li>Westlife - Swear It Again</li>
+<li>Westlife - World of Our Own</li>
+<li>Wet Wet Wet - Love Is All Around</li>
+<li>Wham - Club Tropicana</li>
+<li>Wham - Wake Me Up Before You Go-Go</li>
+<li>Wham! - Last Christmas</li>
+<li>Wheatus - Teenage Dirtbag</li>
+<li>Whitesnake - Here I go again</li>
+<li>Whitesnake - Is this love</li>
+<li>Whitesnake - Looking for love</li>
+<li>Whitney Houston - Greatest Love Of All</li>
+<li>Whitney Houston - How will I know</li>
+<li>Whitney Houston - I Wanna Dance With Somebody</li>
+<li>Whitney Houston - Love will save the day</li>
+<li>Wild Cherry - Play That Funky Music</li>
+<li>Will Young - Switch It On</li>
+<li>will.i.am & Britney Spears - Scream and Shout</li>
+<li>Willie Nelson - On the road again</li>
+<li>Within Temptation feat. Keith Caputo - What have you done</li>
+<li>Wiz Khalifa ft. Charlie Puth - See you again</li>
+<li>Yazoo - Situation (12 inch Maxi-Single version)</li>
+<li>YeLLOW Generation - Tobira no mukou e</li>
+<li>Yes - Owner Of A Lonely Heart</li>
+<li>Ylvis - The Fox</li>
+<li>YOASOBI - Idol (TV)</li>
+<li>Yoko Takahashi - Zankoku na Tenshi no Te-ze</li>
+<li>YUNGBLUD - Abyss (TV)</li>
+<li>Yuri Horie & UNSCANDAL - Scramble (TV)</li>
+<li>YURI!!! on ICE feat. Wataru Hatano - You Only Live Once (TV)</li>
+<li>Yö - Joutsenlaulu</li>
+<li>Yö - Rakkaus on lumivalkoinen</li>
+<li>Zara Larsson - Lush Life</li>
+<li>Zedd - Ignite</li>
+<li>Zedd & Foxes - Clarity</li>
+<li>Zen Café - Piha ilman sadettajaa</li>
+<li>ZZ Top - Gimme All Your Lovin</li>
+</ul>
+</div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        txtValue = li[i].textContent;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>

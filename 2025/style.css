@@ -1,0 +1,175 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: 107vh;
+    margin: 0;
+	background-color:#ddd;
+	background-image: url('pictures/bg.jpg');
+	background-size: cover;
+    background-repeat: repeat;
+}
+
+.wave-text span {
+    display: inline-block;
+    font-size: 2rem;
+    animation: wave 2s ease-in-out infinite;
+	
+}
+
+.kontti {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.scrolling-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/pictures/halloweenheader.png');
+  background-repeat: repeat-x;
+  background-size: contain;
+  animation: scroll 100s linear infinite;
+  z-index: 1;
+  }
+
+  @keyframes scroll {
+    0% { background-position: 0 0; }
+    100% { background-position: 1000% 0; }
+}
+.wave-text {
+	background-color:rgba(0, 0, 0, 0.7);
+	border-radius: 2rem;
+	padding: 2rem;
+	display: block;
+	color: #fff;
+	min-width: 30%;
+	text-align: center;
+	margin-top: 10rem;
+}
+
+.wave-text span:nth-child(10n) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(10n+1) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(10n+2) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(10n+3) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(10n+4) {
+    animation-delay: 0.8s;
+}
+.wave-text span:nth-child(10n+5) {
+    animation-delay: 1s;
+}
+.wave-text span:nth-child(10n+6) {
+    animation-delay: 1.2s;
+}
+.wave-text span:nth-child(10n+7) {
+    animation-delay: 1.4s;
+}
+.wave-text span:nth-child(10n+8) {
+    animation-delay: 1.6s;
+}
+.wave-text span:nth-child(10n+9) {
+    animation-delay: 1.8s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+.video-container {
+  position: relative;
+  width: 90%;
+  aspect-ratio: 16 / 9;
+}
+.video-container iframe {
+  position: absolute;
+  padding-top:10%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.kuvakontti {
+    padding-top:10%;
+}
+
+
+.skelkontti {
+    position: fixed;
+  bottom: 0;
+  left: 10px;
+  z-index: 0;
+}
+
+.ghostkontti {
+ position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.taustat {
+width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  background-image: linear-gradient(#e76b18, #000000);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+}
+
+.header{
+background-color: #C0C0C0;
+  border: 2px solid #808080;
+  margin: 5px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .header-content {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 0px;
+}
+
+
+  .header-image {
+  max-height: 300px;
+  padding: 0px;
+  position: relative;
+  z-index: 2;
+}
+
+.main-content {
+  display: flex;
+  margin: 20px;
+    margin-left: 20px;
+  margin-left: 150px;
+  min-height: 600px;
+  background-color: #E0E0E0;
+  border: 2px solid #808080;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
