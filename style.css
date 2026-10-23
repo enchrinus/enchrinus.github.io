@@ -173,3 +173,22 @@ background-color: #C0C0C0;
   border: 2px solid #808080;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
